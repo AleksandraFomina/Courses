@@ -4,10 +4,10 @@ public class Mentor extends Person implements Staff {
     private boolean isGoodMood;
     private Random random;
 
-    public Mentor(String firstName, String surname, int age) {
+    public Mentor(String firstName, String surname, int age, Random random) {
         super(firstName, surname, age);
         this.isGoodMood = true;
-        random = new Random();
+        this.random = random;
     }
 
     @Override
